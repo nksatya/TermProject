@@ -6,13 +6,23 @@ function validateForm() {
 
     // Validate email and password
     if (email == "abc@gmail.com" && password == "12345") {
+
+        // Show the login message
         document.getElementById("loginMessage").style.display = "block";
+
+        // Store the email in localStorage
+        localStorage.setItem("userEmail", email);
+        localStorage.setItem("userPassword", password);
+
         setTimeout(function(){
             window.location.href="login.html";
-        },3000);
+        },3000);// Redirect after 3 seconds
+
     } else {
+        // Hide the login message
         document.getElementById("loginMessage").style.display = "none";
         alert("Invalid email or password.");
+
     }
 }
 
