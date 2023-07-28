@@ -1,0 +1,25 @@
+
+.login-card{
+    border-radius: 10px;
+    box-shadow: 1px 10px 10px 5px rgb(141, 144, 144);
+    text-align: center;
+    margin-top: 10%
+}
+
+.card-body h2{
+    margin-bottom: 1.5rem;
+}
+
+.btn{
+    width: 30%;
+}
+
+aside{
+    display: flex;
+    flex-direction: row;
+}
+
+.login-form{
+    width: 50%;
+    margin-top: 8%;
+}

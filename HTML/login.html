@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS/login.css'>
+    <script src='../JS/login.js'></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row m-4 pt-3">
+            <div class="col">
+                <div class="login-card p-3">
+                    <div class="card-body pt-3">
+                        <h2>Login Form</h2>
+                        <section>
+                        <aside>
+                            <img src="../Img/login.jpg" alt="login" width="400px" height="400px">
+                        <form class="login-form" onsubmit="validateForm()" method="post">
+                        <div class="form-group">
+                            <label for="email">Email ID:</label>
+                            <input type="email" id="email" required placeholder="name@mail.com">
+                            </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" placeholder="Password" required>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberCheckBox">
+                            <label style="margin-left: 15px;" for="rememberCheckBox"> Remember me?</label>
+                        </div>
+                        <div class="mt-5">
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </div>
+                        <div class="text-center">
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <div class="mt-5">
+                            <p class="text-center">
+                            Don't have an account?
+                            <a href="#">Click here to register</a>
+                            </p>
+                        </div>
+                        <div id="loginMessage" class="alert alert-success mt-3" style="display: none;">
+                            Login successful!
+                        </div>
+                        </form>
+                        </aside>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
