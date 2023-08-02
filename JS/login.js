@@ -5,7 +5,7 @@ function validateForm() {
 
 
     // Validate email and password
-    if (email == "abc@gmail.com" && password == "12345") {
+    if (email === "abc@gmail.com" && password === "12345") {
 
         // Show the login message
         document.getElementById("loginMessage").style.display = "block";
