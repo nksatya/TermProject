@@ -1,3 +1,10 @@
+function init() {
+    let userSession = JSON.parse(localStorage.getItem("userSession"));
+    if (userSession.email != null || userSession.email != undefined) {
+        document.getElementById("loginIcons").setAttribute("hidden", "true");
+    }
+}
+
 function validateForm() {
     // Get form inputs
     const email = document.getElementById("email").value;
@@ -14,9 +21,9 @@ function validateForm() {
         localStorage.setItem("userEmail", email);
         localStorage.setItem("userPassword", password);
 
-        setTimeout(function(){
-            window.location.href="login.html";
-        },3000);// Redirect after 3 seconds
+        setTimeout(function () {
+            window.location.href = "login.html";
+        }, 3000);// Redirect after 3 seconds
 
     } else {
         // Hide the login message
