@@ -1,0 +1,51 @@
+.register-card{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 1px 10px 10px 5px rgb(141, 144, 144);
+    text-align: center;
+    margin-top: 10%
+}
+
+.card-body h2{
+    margin-bottom: 1.5rem;
+}
+
+.btn{
+    width: 30%;
+}
+
+aside{
+    display: flex;
+    flex-direction: row;
+}
+
+.register-form{
+    width: 60%;
+    margin-top: 8%;
+}
+
+/*styles for mobile devices*/
+@media only screen and (min-width: 360px) and (max-width:767px){
+    
+    .container{
+        display: flex;
+        flex-direction:row;
+    }
+    .btn{
+        width:100%;
+    }
+}
+
+
+/*styles for tablet*/
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .btn{
+        width:100%;
+    }
+}

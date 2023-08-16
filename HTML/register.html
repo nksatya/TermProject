@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS/register.css'>
+    <script src='../JS/register.js'></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row m-4 pt-3">
+            <div class="col">
+                <div class="register-card p-3">
+                    <div class="card-body pt-3">
+                        <h2>register Form</h2>
+                        <section>
+                        <aside>
+                            <img src="../Img/register.jpg" alt="register" width="400px" height="400px">
+                        <form class="register-form" onsubmit="validateForm()" method="post">
+                            
+                        <div class="form-group">
+                            <label for="fname">First Name:</label>
+                            <input id="fname" placeholder="First Name" required ><br>
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">Last Name:</label>
+                            <input id="lname" placeholder="Last Name" required >
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email ID:</label>
+                            <input type="email" id="email" required placeholder="name@mail.com" maxlength="100">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" placeholder="Password" maxlength="100" required>
+                        </div>
+                        <div class="mt-5">
+                            <button type="submit" class="btn btn-primary">register</button>
+                        </div>
+                        <div id="registerMessage" class="alert alert-success mt-3" style="display: none;">
+                            register successful!
+                        </div>
+                        </form>
+                        </aside>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
