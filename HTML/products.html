@@ -1,0 +1,414 @@
+<!--Authors: Mani Ratna Reddy Bellamkonda - C0887487, Satya - C0886405 Sai Chand Akkisani - C0882366, Karthik Saride - C0886429, Ravi Varman Ravichandran - C0885920
+  Project: Edu Guru
+  Date: 17-08-2023
+  Description: This HTML code represents a Products page of our educational e-commerce website Edu Guru, displaying a catalog of courses of various Sectors/Industries
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Edu Guru</title>
+   <link rel="icon" type="image/x-icon" href="../CSS/favicon.ico">
+   <!-- This link tag links to the common CSS file -->
+   <link rel="stylesheet" href="../CSS/common.css" type="text/css">
+   <!-- This link tag links to the home CSS file -->
+   <link rel="stylesheet" href="../CSS/home.css" type="text/css">
+   <!-- This link tag links to the product CSS file -->
+   <link rel="stylesheet" href="../CSS/products.css" type="text/css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+   <script src="../JS/product.js"></script>
+</head>
+
+<body>
+   <!--Header section with navigation bar-->
+   <header>
+      <nav class="navbar">
+         <a href="../index.html"><img loading="lazy" src="https://i.ibb.co/M97cfHG/logo1.png" class="logo"
+               style="margin-top: 10px;" alt="Company's logo"></a>
+         <ul class="navbar-list">
+            <li><a href="../index.html"><img loading="lazy" src="https://i.ibb.co/M97cfHG/logo1.png" class="logo2"
+                     alt="Company's logo"></a></li>
+            <li><a class="navbar-list-items" href="../HTML/category.html">Categories</a></li>
+
+            <li><a class="navbar-list-items" href="./products.html">Products</a></li>
+
+            <li><a class="navbar-list-items" href="./contact.html">Contact us</a></li>
+            <li><a class="navbar-list-items" href="./about.html">About us</a></li>
+            <li><a class="navbar-list-items" href="../index.html">Logout</a></li>
+         </ul>
+      </nav>
+   </header>
+   <!-- Main Section -->
+   <!-- This is the main content section -->
+   <main style="background-color: #fdd101;">
+      <!-- This is the section for product cards with id health -->
+      <div class="product-cards" id="health">
+
+         <h2>Health & Fitness</h2>
+         <!-- This is the first product card -->
+         <div class="product-card">
+            <img loading="lazy"
+               src="https://media.self.com/photos/5b7c4e71ecbb7f4c41c77335/1:1/w_4800,h_4800,c_limit/triangle-pose-beginner-yoga.jpg"
+               alt="Shampoo" onclick="storeData(event)">
+            <h3 style="text-align: left;">14-Day Yoga Detox and Empowerment Course</h3>
+            <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Lious Crate</h6>
+            <h3 style="text-align: left;">$45 CAD </h3>
+            <!-- These are buttons for adding to cart and buying now -->
+            <div class="product-buttons">
+               <button class="add-to-cart">Add to Cart</button>
+               <button class="buy-now">Buy Now</button>
+            </div>
+         </div>
+         <!-- This is the second product card -->
+         <div class="product-card">
+            <img loading="lazy"
+               src="https://media.blogto.com/articles/20141006-yogatree2048-09.jpg?w=2048&cmd=resize_then_crop&height=1365&quality=70"
+               alt="Make Up" onclick="storeData(event)">
+            <h3 style="text-align: left;">Kundalini Yoga to Heal Stress and Anxiety by Valinda~Viriam</h3>
+            <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Jhonson Gurg</h6>
+            <h3 style="text-align: left; ">CAD 35</h3>
+            <!-- These are buttons for adding to cart and buying now -->
+            <div class="product-buttons">
+               <button class="add-to-cart">Add to Cart</button>
+               <button class="buy-now">Buy Now</button>
+            </div>
+         </div>
+         <!-- This is the third product card -->
+         <div class="product-card">
+            <img loading="lazy"
+               src="https://static.nike.com/a/images/w_1920,c_limit/43f01829-d882-4999-bd6c-0e958191c670/the-top-3-yoga-poses-to-get-stronger-according-to-experts.jpg"
+               alt="Perfume" onclick="storeData(event)">
+            <h3 style="text-align: left;">Complete Fitness Trainer Certification: Beginner To Advanced</h3>
+            <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Dwayn Broot</h6>
+            <h3 style="text-align: left;">CAD 20</h3>
+            <!-- These are buttons for adding to cart and buying now -->
+            <div class="product-buttons">
+               <button class="add-to-cart">Add to Cart</button>
+               <button class="buy-now">Buy Now</button>
+            </div>
+         </div>
+         <!-- This is the fourth product card -->
+         <div class="product-card">
+            <img loading="lazy"
+               src="https://media.blogto.com/articles/20160719-afterglow2048-04.jpg?w=2048&cmd=resize_then_crop&height=1365&quality=70"
+               alt="Tooth Brush" onclick="storeData(event)">
+            <h3 style="text-align: left;">The Yoga Of Laughter: From Stressed Out To Blissed Out!</h3>
+            <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Dr.Drake</h6>
+            <h3 style="text-align: left;">CAD 26</h3>
+
+            <!-- These are buttons for adding to cart and buying now -->
+            <div class="product-buttons">
+               <button class="add-to-cart">Add to Cart</button>
+               <button class="buy-now">Buy Now</button>
+            </div>
+         </div>
+      </div>
+      <!-- This is the section for product cards with id Marketing -->
+      <div class="product-cards" id="Marketing">
+         <h2>Marketing</h2>
+         <div class="product-card">
+            <img loading="lazy"
+               src="https://builtin.com/sites/www.builtin.com/files/styles/og/public/2022-09/marketing.png" alt="Purse"
+               onclick="storeData(event)">
+            <h3 style="text-align: left;">The Complete Digital Marketing Course - 12 Courses in 1</h3>
+            <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Rob</h6>
+            <h3 style="text-align: left;">CAD 42</h3>
+            <div class="product-buttons">
+               <button class="add-to-cart">Add to Cart</button>
+               <button class="buy-now">Buy Now</button>
+            </div>
+         </div>
+         <div class="product-card">
+            <img loading="lazy"
+               src="https://imageio.forbes.com/specials-images/dam/imageserve/1147545116/960x0.jpg?height=474&width=711&fit=bounds"
+               alt="Shopping Bag" onclick="storeData(event)">
+            <h3 style="text-align: left;">Ultimate Google Ads Training 2021: Profit with Pay Per Click</h3>
+            <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Issac</h6>
+            <h3 style="text-align: left;">CAD 15</h3>
+            <div class="product-buttons">
+               <button class="add-to-cart">Add to Cart</button>
+               <button class="buy-now">Buy Now</button>
+            </div>
+         </div>
+         <div class="product-card">
+            <img loading="lazy" src="https://s40424.pcdn.co/in/wp-content/uploads/2022/11/IIMK-ASMP.jpg.optimal.jpg"
+               alt="Garbage Bags" onclick="storeData(event)">
+            <h3 style="text-align: left;">Instagram Marketing: Complete Guide To Instagram Growth</h3>
+            <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Benjamin</h6>
+            <h3 style="text-align: left;">CAD 37</h3>
+            <div class="product-buttons">
+               <button class="add-to-cart">Add to Cart</button>
+               <button class="buy-now">Buy Now</button>
+            </div>
+         </div>
+         <div class="product-card">
+            <img loading="lazy" src="https://dollarstore.ca/wp-content/uploads/2018/11/marketing-concept.jpg"
+               alt="Carrying Bags" onclick="storeData(event)">
+            <h3 style="text-align: left;">Social Media Marketing MASTERY 2023 | Ads on 10+ Platforms</h3>
+            <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Envy</h6>
+            <h3 style="text-align: left;">CAD 41</h3>
+            <div class="product-buttons">
+               <button class="add-to-cart">Add to Cart</button>
+               <button class="buy-now">Buy Now</button>
+            </div>
+         </div>
+      </div>
+      <!-- This is the section for product cards with id Software -->
+      <div class="product-cards" id="Software">
+         <h2>Software Development</h2>
+         <div class="product-card">
+            <img loading="lazy" src="https://tumo.org/wp-content/uploads/2017/08/web-dev.png" alt="Product 1"
+               onclick="storeData(event)">
+            <h3 style="text-align: left;">The Complete 2023 Web Development Bootcamp</h3>
+            <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Angela</h6>
+            <h3 style="text-align: left;">CAD 55</h3>
+            <div class="product-buttons">
+               <button class="add-to-cart">Add to Cart</button>
+               <button class="buy-now">Buy Now</button>
+            </div>
+         </div>
+         <div class="product-card">
+            <img loading="lazy" src="https://appmaster.io/api/_files/rr4hnsHMxxD3zRBqozjqSC/download/" alt="Product 2"
+               onclick="storeData(event)">
+            <h3 style="text-align: left;">Ultimate AWS Certified Solutions Architect Associate SAA-C03</h3>
+            <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Maarek</h6>
+            <h3 style="text-align: left;">CAD 32</h3>
+            <div class="product-buttons">
+               <button class="add-to-cart">Add to Cart</button>
+               <button class="buy-now">Buy Now</button>
+            </div>
+         </div>
+         <div class="product-card">
+            <img loading="lazy"
+               src="https://www.itweapons.com/wp-content/uploads/2021/04/bigstock-Side-View-Of-Hacker-Using-Comp-253465240.jpg"
+               alt="Product 3" onclick="storeData(event)">
+            <h3 style="text-align: left;">Learn Ethical Hacking From Scratch</h3>
+            <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Sabih</h6>
+            <h3 style="text-align: left;">CAD 34</h3>
+            <div class="product-buttons">
+               <button class="add-to-cart">Add to Cart</button>
+               <button class="buy-now">Buy Now</button>
+            </div>
+         </div>
+         <div class="product-card">
+            <img loading="lazy"
+               src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/8c/33acbbee2643428c36c2abef24e139/OracleSQL800x800.png?auto=format%2Ccompress&dpr=1"
+               alt="Product 4" onclick="storeData(event)">
+            <h3 style="text-align: left;">The Complete Oracle SQL Certification Course</h3>
+            <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Ahmad</h6>
+            <h3 style="text-align: left;">CAD 21</h3>
+            <div class="product-buttons">
+               <button class="add-to-cart">Add to Cart</button>
+               <button class="buy-now">Buy Now</button>
+            </div>
+         </div>
+      </div>
+      <!-- This is the section for product cards with id Personality -->
+      <div class="product-cards" id="Personality">
+         <h2>Personality Development</h2>
+         <div class="product-card">
+            <img loading="lazy" src="https://www.enago.com/academy/wp-content/uploads/2018/09/Time-Management-1.png"
+               alt="EV Charger" onclick="storeData(event)">
+            <h3 style="text-align: left;">Productivity and Time Management for the Overwhelmed</h3>
+            <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Josh</h6>
+            <h3 style="text-align: left;">CAD 25</h3>
+            <div class="product-buttons">
+               <button class="add-to-cart">Add to Cart</button>
+               <button class="buy-now">Buy Now</button>
+            </div>
+         </div>
+         <div class="product-card">
+            <img loading="lazy" src="https://static.toiimg.com/thumb/msid-71033714,width-1280,resizemode-4/71033714.jpg"
+               alt="E-Bike" onclick="storeData(event)">
+            <h3 style="text-align: left;">Storytelling to Influence</h3>
+            <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Jeff</h6>
+            <h3 style="text-align: left;">CAD 29</h3>
+            <div class="product-buttons">
+               <button class="add-to-cart">Add to Cart</button>
+               <button class="buy-now">Buy Now</button>
+            </div>
+         </div>
+         <div class="product-card">
+            <img loading="lazy"
+               src="https://img.freepik.com/premium-vector/soft-skills-concept-human-head-with-business-icons-around-office-workers-empathy-communication-idea-development-education-work-multiple-intelligences-cartoon-vector-illustration_87771-16162.jpg?w=2000"
+               alt="Solar Panel" onclick="storeData(event)">
+            <h3 style="text-align: left;">Customer Service: Soft Skills Fundamentals</h3>
+            <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Samara</h6>
+            <h3 style="text-align: left;">CAD 19</h3>
+            <div class="product-buttons">
+               <button class="add-to-cart">Add to Cart</button>
+               <button class="buy-now">Buy Now</button>
+            </div>
+         </div>
+         <div class="product-card">
+            <img loading="lazy"
+               src="https://assets.entrepreneur.com/content/3x2/2000/20190801160523-GettyImages-507844038.jpeg"
+               alt="Solar water heater" onclick="storeData(event)">
+            <h3 style="text-align: left;">Critical Thinking Strategies For Better Decisions</h3>
+            <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">John</h6>
+            <h3 style="text-align: left;">CAD 32</h3>
+            <div class="product-buttons">
+               <button class="add-to-cart">Add to Cart</button>
+               <button class="buy-now">Buy Now</button>
+            </div>
+         </div>
+      </div>
+      <!-- This is the section for product cards with id Finance -->
+      <div class="product-cards" id="Finance">
+         <h2>Finance & Accounting</h2>
+         <div class="product-card">
+            <img loading="lazy"
+               src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/d9/b7a0d0ff9c11e6b4394f01375dc7b5/FAFLogo.jpg?auto=format%2Ccompress&dpr=1"
+               alt="Packing Bags" onclick="storeData(event)">
+            <h3 style="text-align: left;">Introductory Financial Accounting</h3>
+            <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Frik</h6>
+            <h3 style="text-align: left;">CAD 30</h3>
+            <div class="product-buttons">
+               <button class="add-to-cart">Add to Cart</button>
+               <button class="buy-now">Buy Now</button>
+            </div>
+         </div>
+         <div class="product-card">
+            <img loading="lazy" src="https://investmentu.com/wp-content/uploads/2020/09/What-is-swing-trading.jpg"
+               alt="Cardboard Container" onclick="storeData(event)">
+            <h3 style="text-align: left;">Simple Strategy for Swing Trading the Stock Market</h3>
+            <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Tom</h6>
+            <h3 style="text-align: left;">CAD 38</h3>
+            <div class="product-buttons">
+               <button class="add-to-cart">Add to Cart</button>
+               <button class="buy-now">Buy Now</button>
+            </div>
+         </div>
+         <div class="product-card">
+            <img loading="lazy"
+               src="https://blackwellglobal.com/wp-content/uploads/2020/01/Beginners-and-Professional-traders-Blackwell-Global-Forex-Broker-2.jpg"
+               alt="Carrying Bags" onclick="storeData(event)">
+            <h3 style="text-align: left;">The Complete Forex Trader</h3>
+            <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Beak</h6>
+            <h3 style="text-align: left;">CAD 45</h3>
+            <div class="product-buttons">
+               <button class="add-to-cart">Add to Cart</button>
+               <button class="buy-now">Buy Now</button>
+            </div>
+         </div>
+         <div class="product-card">
+            <img loading="lazy"
+               src="https://netivist.org/uploads/forum/discussions/pictures/5654b36255f4f71170ca4d0a/pros-and-cons-of-capitalism.jpg"
+               alt="Cans" onclick="storeData(event)">
+            <h3 style="text-align: left;">Capitalism in Crisis: The global economic crisis explained</h3>
+            <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Richard</h6>
+            <h3 style="text-align: left;">CAD 24</h3>
+            <div class="product-buttons">
+               <button class="add-to-cart">Add to Cart</button>
+               <button class="buy-now">Buy Now</button>
+            </div>
+         </div>
+      </div>
+      <!-- This is the section for product cards with id Music -->
+      <div class="product-cards" id="Music">
+         <h2>Music</h2>
+         <div class="product-card">
+            <img loading="lazy"
+               src="https://assets.yousician.com/app/uploads/2022/05/05130122/yousician-educational-photography-21-1024x683.jpg.webp"
+               alt="Wooden Brushes" onclick="storeData(event)">
+            <h3 style="text-align: left;">Learn Guitar in 21 Days</h3>
+            <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">TrueFire</h6>
+            <h3 style="text-align: left;">CAD 65</h3>
+            <div class="product-buttons">
+               <button class="add-to-cart">Add to Cart</button>
+               <button class="buy-now">Buy Now</button>
+            </div>
+         </div>
+         <div class="product-card">
+            <img loading="lazy"
+               src="https://edm.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk3ODU3NTkwNDAxNjQwMzEw/pexels-pixabay-164745.jpg"
+               alt="Product 2" onclick="storeData(event)">
+            <h3 style="text-align: left;">Mixing Electronic Music with Logic Pro</h3>
+            <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Kamal</h6>
+            <h3 style="text-align: left;">CAD 47</h3>
+            <div class="product-buttons">
+               <button class="add-to-cart">Add to Cart</button>
+               <button class="buy-now">Buy Now</button>
+            </div>
+         </div>
+         <div class="product-card">
+            <img loading="lazy"
+               src="https://usa.yamaha.com/files/keyboardsindex_6aecfb3aa62a2ecfca1204dea45918da.jpg?impolicy=resize&imwid=4648&imhei=2848"
+               alt="Product 3" onclick="storeData(event)">
+            <h3 style="text-align: left;">Pianoforall - Incredible New Way To Learn Piano & Keyboard</h3>
+            <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Robin</h6>
+            <h3 style="text-align: left;">CAD 38</h3>
+            <div class="product-buttons">
+               <button class="add-to-cart">Add to Cart</button>
+               <button class="buy-now">Buy Now</button>
+            </div>
+         </div>
+         <div class="product-card">
+            <img loading="lazy"
+               src="https://d29rinwu2hi5i3.cloudfront.net/article_media/c62a8150-4bd6-4eb6-a995-a5117a0dc2f7/screen_shot_5.jpg"
+               alt="Product 4" onclick="storeData(event)">
+            <h3 style="text-align: left;">How to Remix in Logic Pro X</h3>
+            <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Bowes</h6>
+            <h3 style="text-align: left;">CAD 31</h3>
+            <div class="product-buttons">
+               <button class="add-to-cart">Add to Cart</button>
+               <button class="buy-now">Buy Now</button>
+            </div>
+         </div>
+      </div>
+   </main>
+   <a href="https://api.whatsapp.com/send?phone=9057838727&text=Hi Team Edu Guru!" class="float" target="_blank">
+      <i class="fa fa-whatsapp my-float"></i>
+   </a>
+   <!--Main Section Ends-->
+   <!-- This is the footer section that contains information about social media, the website, and legal policies -->
+   <footer class="footer">
+      <div class="footer-wrapper">
+         <!-- This section contains links to various social media pages -->
+         <div class="column social">
+            <h3>Social</h3>
+            <ul>
+               <li><a href="https://www.linkedin.com/in/ratnareddy/" target="_blank"
+                     style="font-size: 200%; color: white;"><i class="bi bi-linkedin"></i></a></li>
+               <li><a href="https://www.facebook.com/mani.ratna.167" target="_blank"
+                     style="font-size: 200%; color: white;"><i class="bi bi-facebook"></i></a></li>
+               <li><a href="mailto:maniratnabellamkonda@gmail.com" target="_blank"
+                     style="font-size: 200%; color: white;"><i class="bi bi-envelope-fill"></i></a></li>
+               <li><a href="https://instagram.com/connect.mani?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D"
+                     target="_blank" style="font-size: 200%; color: white;"><i class="bi bi-instagram"></i></a></li>
+            </ul>
+         </div>
+         <!-- This section contains links to the about page, contact page-->
+         <div class="column about">
+            <h3>About</h3>
+            <ul>
+               <li><a href="about.html">About us</a></li>
+               <li><a href="contact.html">Contact us</a></li>
+
+            </ul>
+         </div>
+         <!-- This section contains links to data policy, privacy policy, terms, and imprint pages -->
+         <div class="column legals">
+            <h3>Legals</h3>
+            <ul>
+               <li><a href="#">Data Policy</a></li>
+               <li><a href="#">Private Policy</a></li>
+               <li><a href="#">Terms</a></li>
+               <li><a href="#">Imprint</a></li>
+            </ul>
+         </div>
+      </div>
+      <!-- This section contains the copyright information -->
+      <div class="copyright">
+         <p> Made with 💛 by Edu Guru</p>
+      </div>
+   </footer>
+   <!-- End of footer section -->
+</body>
+
+</html>

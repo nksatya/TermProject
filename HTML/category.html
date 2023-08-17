@@ -1,0 +1,217 @@
+<!--Authors: Mani Ratna Reddy Bellamkonda - C0887487, Satya - C0886405 Sai Chand Akkisani - C0882366, Karthik Saride - C0886429, Ravi Varman Ravichandran - C0885920
+  Project: Edu Guru
+  Date: 17-08-2023
+  Description: This HTML code represents a Home page of our educational e-commerce website Edu Guru, displaying a catalog of various industries for which we offer courses for.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- This meta tag sets the character encoding of the document to UTF-8 -->
+  <meta charset="utf-8">
+  <!-- This meta tag sets the width of the viewport to the width of the device, and sets the initial scale to 1.0 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- This tag sets the title of the page -->
+  <title>Edu Guru</title>
+  <link rel="icon" type="image/x-icon" href="../CSS/favicon.ico"> <!-- icon for the website  -->
+  <!-- This link tag links to the common CSS file -->
+  <link rel="stylesheet" href="../CSS/common.css" type="text/css">
+  <!-- This link tag links to the home CSS file -->
+  <link rel="stylesheet" href="../CSS/home.css" type="text/css">
+  <!-- This link tag links to the Roboto font on the Google Fonts website -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--Header section with navigation bar-->
+  <header>
+    <nav class="navbar">
+      <a href="index.html"><img src="https://i.ibb.co/M97cfHG/logo1.png" class="logo" alt="Company's logo"></a>
+      <ul class="navbar-list">
+        <li><a href="index.html"><img src="https://i.ibb.co/M97cfHG/logo1.png" class="logo2" alt="Company's logo"></a>
+        </li>
+        <li><a class="navbar-list-items" href="#down">Categories</a></li>
+
+        <li><a class="navbar-list-items" href="../HTML/products.html">Products</a></li>
+
+        <li><a class="navbar-list-items" href="../HTML/contact.html">Contact us</a></li>
+        <li><a class="navbar-list-items" href="../HTML/about.html">About us</a></li>
+        <li><a class="navbar-list-items" href="../index.html">Logout</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <style type="text/css">
+    html {
+      scroll-behavior: smooth;
+      /* smooth behavior for auto scroll to designated html element used at CATEGORIES button*/
+    }
+  </style>
+
+  <!--Main section-->
+  <main style=" background-color: #fdd101 !important;">
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Auto scroll banner displaying most selling courses -->
+      <!-- Carousel indicators -->
+      <ol class="carousel-indicators">
+        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+      </ol>
+      <!-- Wrapper for carousel items -->
+      <div class="carousel-inner">
+
+        <div class="carousel-item ">
+          <img src="https://www.lucidadvertising.com/wp-content/uploads/2020/06/marketing.jpg" class="d-block w-100"
+            alt="Slide 2" style="height: 680px;">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color: black">Marketing</h5>
+            <p style="color: black">Master Digital Marketing Strategy, Social Media Marketing, SEO, YouTube, Email,
+              Facebook Marketing, Analytics & More!</p>
+          </div>
+        </div>
+        <div class="carousel-item active"> <!-- default banner -->
+          <img
+            src="https://global-uploads.webflow.com/62b397ed0ff18cefd722ad0c/62e81ca0304e5174b6fa0d78_coding_for_business.jpg"
+            class="d-block w-100" alt="Slide 1" style="height: 680px;">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="margin-left: 20px">Software Development</h5>
+            <p>Learn what are the basic programming concepts like programming language, framework, library, database,
+              cloud and much more</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://cloudinary.hbs.edu/hbsit/image/upload/s--wx5D2ABw--/f_auto,c_fill,h_375,w_750,/v20200101/5393409F6FB391494111C5EC16653C89.jpg"
+            class="d-block w-100" alt="Slide 3" style="height: 680px;">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Finance and Accounting</h5>
+            <p>Learn the basics of Accounting including: the accounting cycle, inventory, depreciation, receivables, and
+              more!</p>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel controls -->
+      <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+    <!-- This section contains a set of cards, each of which displays an image and a title -->
+    <div id="down">
+      <section class="blog-cards-section">
+
+
+        <!-- The first card displays an image related to Health & Fitness -->
+        <div class="blog-cards" class="zoom">
+          <a href="../HTML/products.html#health"><img
+              src="https://www.health.com/thmb/jZUEZBuA4eO7WBWURoOCkxdLGFU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1395504255-33d159af773f45039286966a35dfd76d.jpg"
+              alt="Personal Care" style="border-radius: 10%;"> <!-- border radius to curve the cards -->
+            <h3>Health & Fitness</h3>
+          </a>
+        </div>
+        <!-- The second card displays an image related to Marketing -->
+        <div class="blog-cards">
+          <a href="../HTML/products.html#Marketing"><img
+              src="https://imageio.forbes.com/specials-images/dam/imageserve/1147545116/960x0.jpg?format=jpg&width=960"
+              alt="Bag" style="border-radius: 10%;">
+            <h3>Marketing</h3>
+          </a>
+        </div>
+        <!-- The third card displays an image related to Software Development -->
+        <div class="blog-cards">
+          <a href="../HTML/products.html#Software"><img
+              src="https://marsner.com/wp-content/uploads/why-custom-software-development.jpeg" alt="Clothing"
+              style="border-radius: 10%;">
+            <h3>Software Development</h3>
+          </a>
+        </div>
+        <!-- The fourth card displays an image related to Personality Development -->
+        <div class="blog-cards">
+          <a href="../HTML/products.html#Personality"><img
+              src="https://media.licdn.com/dms/image/C5112AQHYtj4RiaCAPA/article-cover_image-shrink_600_2000/0/1582257988754?e=1697068800&v=beta&t=MROkvIOBb2YfnHefbYv8QtVtAxSFIgNu0V_uh44k_rc"
+              alt="Containers and Packaging" style="border-radius: 10%;">
+            <h3>Personality Development</h3>
+          </a>
+        </div>
+        <!-- The fifth card displays an image related to Finance & Accounting -->
+        <div class="blog-cards">
+          <a href="../HTML/products.html#Finance"><img
+              src="https://nuvest.net/wp-content/uploads/2017/03/Nuvest_Why-Financial-Accounting-and-Management-Accounting-are-Essential-for-Business.jpeg"
+              alt="Cleaning" style="border-radius: 10%;">
+            <h3>Finance & Accounting</h3>
+          </a>
+        </div>
+        <!-- The sixth card displays an image related to Music-->
+        <div class="blog-cards">
+          <a href="../HTML/products.html#Music"><img
+              src="https://daily.jstor.org/wp-content/uploads/2023/01/good_times_with_bad_music_1050x700.jpg"
+              alt="Electronics" style="border-radius: 10%;">
+            <h3>Music</h3>
+          </a>
+        </div>
+      </section>
+    </div>
+
+  </main>
+  <a href="https://api.whatsapp.com/send?phone=9057838727&text=Hi Team Edu Guru!" class="float" target="_blank">
+    <!-- Whatsapp option to direct message the team with default message set-->
+    <i class="fa fa-whatsapp my-float"></i>
+  </a>
+  <!-- End of Main section -->
+  <!-- This is the footer section that contains information about social media, the website, and legal policies -->
+  <footer class="footer" style="margin-top:0%; ">
+    <div class="footer-wrapper">
+      <!-- This section contains links to various social media pages -->
+      <div class="column social">
+        <h3>Social</h3>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/ratnareddy/" target="_blank"
+              style="font-size: 200%; color: white;"><i class="bi bi-linkedin"></i></a></li>
+          <li><a href="https://www.facebook.com/mani.ratna.167" target="_blank"
+              style="font-size: 200%; color: white;"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="mailto:maniratnabellamkonda@gmail.com" target="_blank" style="font-size: 200%; color: white;"><i
+                class="bi bi-envelope-fill"></i></a></li>
+          <li><a href="https://instagram.com/connect.mani?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D" target="_blank"
+              style="font-size: 200%; color: white;"><i class="bi bi-instagram"></i></a></li>
+        </ul>
+      </div>
+      <!-- This section contains links to the about page, contact page, careers page, and help center page -->
+      <div class="column about">
+        <h3>About</h3>
+        <ul>
+          <li><a href="HTML/about.html">About us</a></li>
+          <li><a href="HTML/contact.html">Contact us</a></li>
+
+        </ul>
+      </div>
+      <!-- This section contains links to data policy, privacy policy, terms, and imprint pages -->
+      <div class="column legals">
+        <h3>Legals</h3>
+        <ul>
+          <li><a href="#">Data Policy</a></li>
+          <li><a href="#">Private Policy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Imprint</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- This section contains the copyright information -->
+    <div class="copyright">
+      <p> Made with 💛 by Edu Guru</p>
+    </div>
+  </footer>
+  <!-- End of footer section -->
+</body>
+
+</html>

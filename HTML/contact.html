@@ -1,0 +1,151 @@
+<!--Authors: Mani Ratna Reddy Bellamkonda - C0887487, Satya - C0886405 Sai Chand Akkisani - C0882366, Karthik Saride - C0886429, Ravi Varman Ravichandran - C0885920
+  Project: Edu Guru
+  Date: 17-08-2023
+  Description: This HTML code represents a Contact page of our educational e-commerce website Edu Guru, displaying a the contact info of our firm and a form to wite to us.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Contact Edu Guru</title>
+   <link rel="icon" type="image/x-icon" href="../CSS/favicon.ico">
+   <link rel="stylesheet" href="../CSS/common.css" type="text/css">
+   <!-- This link tag links to the contact CSS file -->
+   <link rel="stylesheet" href="../CSS/contact.css" type="text/css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <script type="text/javascript">
+      function msg(inName) {                  /* function triggered on click of send mail button fetches name through parameter and displays alert */
+         alert("Hi " + inName + "! " + "Please send the mail, We'll get back to you shortly");
+      }
+   </script>
+</head>
+
+<body>
+   <!--Header section with navigation bar-->
+   <header>
+      <nav class="navbar">
+         <a href="../index.html"><img loading="lazy" src="https://i.ibb.co/M97cfHG/logo1.png" class="logo"
+               style="margin-top: 10px;" alt="Companys logo"></a>
+         <ul class="navbar-list">
+            <li><a href="../index.html"><img loading="lazy" src="https://i.ibb.co/M97cfHG/logo1.png" class="logo2"
+                     alt="Company's logo"></a></li>
+            <li><a class="navbar-list-items" href="../HTML/category.html">Categories</a></li>
+
+            <li><a class="navbar-list-items" href="./products.html">Products</a></li>
+
+            <li><a class="navbar-list-items" href="./contact.html">Contact us</a></li>
+            <li><a class="navbar-list-items" href="./about.html">About us</a></li>
+            <li><a class="navbar-list-items" href="../index.html">Logout</a></li>
+         </ul>
+      </nav>
+   </header>
+   <!-- This is the main section of the HTML code -->
+   <main>
+      <!-- This is a section for the contact information -->
+      <section class="contact-container">
+         <!-- This is a div that contains the heading and a brief description for the contact section -->
+         <div>
+            <h2 class="contact-heading">Contact</h2>
+            <p class="contact-p">Please feel free to get in touch with us at Edu Guru by visiting at following location
+               or by writing to us by filling the following form.
+            </p>
+         </div>
+         <!-- This is a div containing two child divs, one for the location and contact information and the other for the form to send a mail -->
+         <div class="d-flex">
+            <!-- This is a div containing the location and contact information -->
+            <div class="iframe-map">
+               <!-- This is a div that contains information about the location, email, and phone number -->
+               <div class="info">
+                  <div>
+                     <h4>Location:</h4>
+                     <p>Lambton college;265 Yorkland Blvd #400, North York, ON M2J 1S5</p>
+                  </div>
+                  <div class="email">
+                     <h4>Email:</h4>
+                     <p><a href="mailto:maniratnabellamkonda@gmail.com">maniratnabellamkonda@gmail.com</a></p>
+                  </div>
+                  <div>
+                     <h4>Call:</h4>
+                     <p><a href="tel:+19057838727">+1 905-783-8727</a></p>
+                  </div>
+                  <!-- This is an iframe for a Google Maps location of Lambton College in Toronto -->
+                  <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.9811713386816!2d-79.33830388416648!3d43.77324967911741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d3bca1a3f78f%3A0x815365ed6c3b957e!2sLambton%20College%20In%20Toronto!5e0!3m2!1sen!2sus!4v1680145929169!5m2!1sen!2sus"
+                     height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade"></iframe>
+               </div>
+            </div>
+            <!-- This is a div containing a form to send a mail -->
+            <div class="col-lg-7">
+               <form action="mailto:maniratnabellamkonda@gmail.com" name="contactform">
+                  <div class="form-group">
+                     <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="form-group">
+                     <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                  </div>
+                  <div class="form-group">
+                     <textarea class="form-control" name="body" rows="5" placeholder="Message" required></textarea>
+                  </div>
+                  <div class="text-center">
+                     <button type="submit" onclick="msg(contactform.name.value)" class="add-form-btn">Send Mail</button>
+                     <!-- onclick function to send mail -->
+                  </div>
+               </form>
+            </div>
+         </div>
+      </section>
+   </main>
+   <a href="https://api.whatsapp.com/send?phone=9057838727&text=Hi Team Edu Guru!" class="float" target="_blank">
+      <i class="fa fa-whatsapp my-float"></i>
+   </a>
+   <!--End Main Section -->
+   <!-- This is the footer section that contains information about social media, the website, and legal policies -->
+   <footer class="footer">
+      <div class="footer-wrapper">
+         <!-- This section contains links to various social media pages -->
+         <div class="column social">
+            <h3>Social</h3>
+            <ul>
+               <li><a href="https://www.linkedin.com/in/ratnareddy/" target="_blank"
+                     style="font-size: 200%; color: white;"><i class="bi bi-linkedin"></i></a></li>
+               <li><a href="https://www.facebook.com/mani.ratna.167" target="_blank"
+                     style="font-size: 200%; color: white;"><i class="bi bi-facebook"></i></a></li>
+               <li><a href="mailto:maniratnabellamkonda@gmail.com" target="_blank"
+                     style="font-size: 200%; color: white;"><i class="bi bi-envelope-fill"></i></a></li>
+               <li><a href="https://instagram.com/connect.mani?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D"
+                     target="_blank" style="font-size: 200%; color: white;"><i class="bi bi-instagram"></i></a></li>
+            </ul>
+         </div>
+         <!-- This section contains links to the about page, contact page-->
+         <div class="column about">
+            <h3>About</h3>
+            <ul>
+               <li><a href="about.html">About us</a></li>
+               <li><a href="contact.html">Contact us</a></li>
+
+            </ul>
+         </div>
+         <!-- This section contains links to data policy, privacy policy, terms, and imprint pages -->
+         <div class="column legals">
+            <h3>Legals</h3>
+            <ul>
+               <li><a href="#">Data Policy</a></li>
+               <li><a href="#">Private Policy</a></li>
+               <li><a href="#">Terms</a></li>
+               <li><a href="#">Imprint</a></li>
+            </ul>
+         </div>
+      </div>
+      <!-- This section contains the copyright information -->
+      <div class="copyright">
+         <p> Made with 💛 by Edu Guru</p>
+      </div>
+   </footer>
+   <!-- End of footer section -->
+</body>
+
+</html>

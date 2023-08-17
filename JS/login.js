@@ -1,16 +1,18 @@
-// Create or open the IndexedDB database
 const dbName = 'loginDB';
 const storeName = 'logins';
+
+// Open or create the IndexedDB database
 const request = indexedDB.open(dbName, 1);
 
 request.onerror = (event) => {
-    console.log('Error opening database: ', event.target.error);
+    console.log('Error opening database:', event.target.error);
 };
 
 request.onupgradeneeded = (event) => {
     const db = event.target.result;
+    // Create an object store to store user data
     const objectStore = db.createObjectStore(storeName, { keyPath: 'email' });
-    objectStore.createIndex('password', 'password', { unique: false });
+    objectStore.createIndex('email', 'email', { unique: true });
 };
 
 // Function to add login details to IndexedDB
@@ -19,75 +21,51 @@ function addLoginDetails(email, password) {
     const transaction = db.transaction(storeName, 'readwrite');
     const objectStore = transaction.objectStore(storeName);
     const loginDetails = { email, password };
-    const request = objectStore.add(loginDetails);
+    const addRequest = objectStore.add(loginDetails);
 
-    request.onsuccess = (event) => {
+    addRequest.onsuccess = (event) => {
         console.log('Login details added to IndexedDB.');
     };
 
-    request.onerror = (event) => {
+    addRequest.onerror = (event) => {
         console.log('Error adding login details: ', event.target.error);
     };
 }
 
- // Function to check login details from IndexedDB
- function checkLoginDetails(email, password) {
+
+function validateLogin(email, password) {
     const db = request.result;
     const transaction = db.transaction(storeName, 'readonly');
     const objectStore = transaction.objectStore(storeName);
-    const request = objectStore.get(email);
+    const getRequest = objectStore.get(email);
 
-    request.onsuccess = (event) => {
-        const loginDetails = event.target.result;
+    getRequest.onsuccess = (event) => {
+        const userDetails = event.target.result;
 
-        if (loginDetails && loginDetails.password === password) {
+        if (userDetails && userDetails.password === password) {
             console.log('Login successful!');
+            location.href = "D:/Study documents/Term 2/FE II/Assignment Git/Term project Karthik/TermProject/HTML/category.html";
         } else {
             console.log('Invalid email or password.');
         }
     };
 
-    request.onerror = (event) => {
-        console.log('Error retrieving login details: ', event.target.error);
+    getRequest.onerror = (event) => {
+        console.log('Error retrieving user details:', event.target.error);
     };
 }
 
-// Function to handle form submission and store login details
-function validateForm() {
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
 
-    addLoginDetails(email, password);
-    checkLoginDetails(email, password);
+// Function to handle login form submission and validate login details
+function validateForm() {
+    const loginEmail = document.getElementById('email').value;
+    const loginPassword = document.getElementById('password').value;
+
+    addLoginDetails(loginEmail, loginPassword);
+    validateLogin(loginEmail, loginPassword);
+
+    const loginMessage = document.getElementById('loginMessage');
+    loginMessage.style.display = 'block';
 
     return false; // Prevent form submission
 }
-
-/*function validateForm() {
-    // Get form inputs
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-
-
-    // Validate email and password
-    if (email === "abc@gmail.com" && password === "12345") {
-
-        // Show the login message
-        document.getElementById("loginMessage").style.display = "block";
-
-        // Store the email in localStorage
-        localStorage.setItem("userEmail", email);
-        localStorage.setItem("userPassword", password);
-
-        setTimeout(function(){
-            window.location.href="login.html";
-        },3000);// Redirect after 3 seconds
-
-    } else {
-        // Hide the login message
-        document.getElementById("loginMessage").style.display = "none";
-        alert("Invalid email or password.");
-
-    }
-}*/
-

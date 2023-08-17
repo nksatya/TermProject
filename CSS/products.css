@@ -1,0 +1,146 @@
+/* Authors: Mani Ratna Reddy Bellamkonda - C0887487, Satya - C0886405 Sai Chand Akkisani - C0882366, Karthik Saride - C0886429, Ravi Varman Ravichandran - C0885920
+  Project: Edu Guru
+  Date: 17-08-2023
+    Description: This is the product CSS which includes styling of Product Categories and list items, compatible across all devices*/
+
+/* Desktop */
+
+/* This class defines the layout and positioning of a container that holds multiple product cards */
+.product-cards {
+  margin: 40px 40px 100px 40px; /* sets margin around the container */
+  display: flex; /* enables flexbox layout */
+  flex-wrap: wrap; /* allows flex items to wrap to the next line if there is not enough space */
+  gap: 20px; /* sets the spacing between flex items */
+}
+
+/* This class defines the styling for an individual product card */
+.product-card {
+  width: calc(25% - 20px); /* sets the width of the card to 25% minus the gap space */
+  display: flex; /* enables flexbox layout */
+  flex-direction: column; /* stacks the card's child elements in a vertical column */
+  justify-content: space-between; /* evenly distributes the space between the elements */
+  background-color: #fff; /* sets the card's background color */
+  border-radius: 10px; /* rounds the edges of the card */
+  padding: 20px; /* adds padding inside the card */
+}
+
+/* This selector targets the image element inside the product card */
+.product-card img {
+  height: 250px; /* sets the height of the image */
+  width: 100%; /* makes the image stretch to fill the width of its container */
+  object-fit: cover; /* scales the image to cover the entire container, without distorting it */
+  border-radius: 10px; /* rounds the edges of the image */
+
+  transition: transform .2s;
+  object-fit: cover;
+  margin: 0 auto;
+
+}
+.product-card img:hover{
+    -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05); 
+}
+
+
+/* This selector targets the heading element inside the product card */
+.product-card h3 {
+  font-size: 20px; /* sets the font size of the heading */
+  margin: 10px 0; /* adds margin above and below the heading */
+}
+
+/* This selector targets the paragraph element inside the product card */
+.product-card p {
+  font-size: 16px; /* sets the font size of the paragraph */
+  margin-bottom: 15px; /* adds margin below the paragraph */
+  height: 65px; /* limits the height of the paragraph */
+  text-overflow: ellipsis; /* adds an ellipsis (...) to indicate that the text has been truncated */
+  text-align: center; /* centers the text horizontally */
+}
+
+/* This selector targets the button element inside the product card */
+.product-card button {
+  text-align: center; /* centers the text horizontally */
+  background-color: #142431; /* sets the background color of the button */
+  color: #fff; /* sets the text color of the button */
+  border: none; /* removes the border around the button */
+  border-radius: 5px; /* rounds the edges of the button */
+  padding: 10px 20px; /* adds padding inside the button */
+  cursor: pointer; /* changes the mouse cursor when hovering over the button */
+  font-size: 16px; /* sets the font size of the button text */
+  transition: transform 0.3s ease-in-out; /* adds a smooth transition effect when the button is clicked */
+  display: block; /* makes the button a block-level element, so it takes up the full width of its container */
+  width: 100%; /* sets the width of the button to 100% of its container */
+  margin-right: 10%; /* adds margin to the right of the button */
+  margin-bottom: 5%; /* adds margin below the button */
+}
+
+
+/* This selector targets the button element inside the product card when it is hovered over */
+.product-card button:hover{
+  transform: scale(1.05); /* increases the size of the button slightly when hovered over */
+}
+
+/* This selector targets the button element inside the product card when it is clicked */
+.product-card button:active{
+  transform: scale(0.95); /* decreases the size of the button slightly when clicked */
+}
+
+/* This selector targets the element with class 'buy-now' inside the product card */
+.product-card .buy-now {
+  background-color: #fff; /* sets the background color of the element */
+  color: #142431; /* sets the text color of the element */
+  border: 2px solid #142431; /* adds a 2-pixel solid border around the element */
+}
+
+/* This selector targets all h2 elements */
+h2 {
+  width: 100%; /* sets the width of the element to 100% of its container */
+  text-align: center; /* centers the text horizontally */
+  color: black; /* sets the text color to white */
+}
+
+/* This selector targets all h3 elements */
+h3 {
+  text-align: center; /* centers the text horizontally */
+  width: 100%; /* sets the width of the element to 100% of its container */
+  font-size: 18px; /* sets the font size of the element */
+  margin: 10px 0; /* adds margin above and below the element */
+}
+
+/* This media query applies the following styles only when the screen width is at least 1024 pixels */
+@media screen and (min-width: 1024px) {
+  .product-cards {
+    margin: 40px 80px 100px 80px; /* adjusts the margin around the container */
+  }
+}
+
+
+/* This media query applies the following styles only when the screen width is at most 767 pixels */
+@media screen and (max-width: 767px) {
+  .product-cards {
+    margin: 20px; /* adjusts the margin around the container */
+  }
+  .product-card {
+    width: calc(50% - 10px); /* sets the width of the product card to be 50% of the container with some margin in between */
+  }
+
+  /* This selector targets the element with class 'product-buttons' inside the product card */
+  .product-card .product-buttons {
+    display: flex; /* sets the display property to flex to align child elements */
+    flex-direction: column; /* arranges child elements vertically */
+  }
+
+  /* This selector targets the element with class 'add-to-cart' inside the product card */
+  .product-card .add-to-cart {
+    margin: 10px 0; /* adds margin above and below the element */
+    width: 100%; /* sets the width of the element to 100% of its container */
+  }
+
+  /* This selector targets the element with class 'buy-now' inside the product card */
+  .product-card .buy-now {
+    margin: 10px 0 0; /* adds margin above the element */
+    width: 100%; /* sets the width of the element to 100% of its container */
+  }
+}
+

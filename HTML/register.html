@@ -1,58 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- This meta tag sets the character encoding of the document to UTF-8 -->
+    <meta charset="utf-8">
+    <!-- This meta tag sets the width of the viewport to the width of the device, and sets the initial scale to 1.0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This tag sets the title of the page -->
+    <title>Edu Guru</title>
+    <link rel="icon" type="image/x-icon" href="../CSS/favicon.ico"> <!-- icon for the website  -->
+    <!-- This link tag links to the common CSS file -->
+    <link rel="stylesheet" href="../CSS/common.css" type="text/css">
+    <!-- This link tag links to the home CSS file -->
+    <link rel="stylesheet" href="../CSS/home.css" type="text/css">
+    <!-- This link tag links to the Roboto font on the Google Fonts website -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='../CSS/register.css'>
     <script src='../JS/register.js'></script>
 </head>
+
 <body>
+    <!--Header section with navigation bar-->
+    <header>
+        <nav class="navbar">
+            <a href="../index.html"><img loading="lazy" src="https://i.ibb.co/M97cfHG/logo1.png" class="logo"
+                    style="margin-top: 10px;" alt="Companys logo"></a>
+            <ul class="navbar-list">
+                <li><a href="../index.html"><img loading="lazy" src="https://i.ibb.co/M97cfHG/logo1.png" class="logo2"
+                            alt="Company's logo"></a></li>
+                <li><a class="navbar-list-items" href="./contact.html">Contact us</a></li>
+                <li><a class="navbar-list-items" href="./about.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
         <div class="row m-4 pt-3">
             <div class="col">
                 <div class="register-card p-3">
                     <div class="card-body pt-3">
-                        <h2>register Form</h2>
+                        <h2>Register Form</h2>
                         <section>
-                        <aside>
-                            <img src="../Img/register.jpg" alt="register" width="400px" height="400px">
-                        <form class="register-form" onsubmit="validateForm()" method="post">
-                            
-                        <div class="form-group">
-                            <label for="fname">First Name:</label>
-                            <input id="fname" placeholder="First Name" required ><br>
-                        </div>
-                        <div class="form-group">
-                            <label for="lname">Last Name:</label>
-                            <input id="lname" placeholder="Last Name" required >
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email ID:</label>
-                            <input type="email" id="email" required placeholder="name@mail.com" maxlength="100">
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password:</label>
-                            <input type="password" id="password" placeholder="Password" maxlength="100" required>
-                        </div>
-                        <div class="mt-5">
-                            <button type="submit" class="btn btn-primary">register</button>
-                        </div>
-                        <div id="registerMessage" class="alert alert-success mt-3" style="display: none;">
-                            register successful!
-                        </div>
-                        </form>
-                        </aside>
+                            <aside>
+                                <img src="../Img/register.jpg" alt="register" width="400px" height="400px">
+                                <form class="register-form" onsubmit="validateForm()" action="D:/Study documents/Term 2/FE II/Assignment Git/Term project Karthik/TermProject/index.html">
+
+                                    <div class="form-group">
+                                        <label class="form-label" for="fname">First Name:</label>
+                                        <input id="fname" placeholder="First Name" required="true"><br>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="lname">Last Name:</label>
+                                        <input id="lname" placeholder="Last Name" required="true">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="email">Email ID:</label>
+                                        <input type="email" id="email" required="true" placeholder="name@mail.com"
+                                            maxlength="100">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="password">Password:</label>
+                                        <input type="password" id="password" placeholder="Password" maxlength="100"
+                                            required="true">
+                                    </div>
+                                    <div class="mt-5">
+                                        <button type="submit" class="btn btn-dark">Register</button>
+                                    </div>
+                                    <div id="registerMessage" class="alert alert-success mt-3" style="display: none;">
+                                        Register successful!
+                                    </div>
+                                </form>
+                            </aside>
                         </section>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- This is the footer section that contains information about social media, the website, and legal policies -->
+    <footer class="footer" style="margin-top:0%; ">
+        <div class="footer-wrapper">
+            <!-- This section contains links to various social media pages -->
+            <div class="column social">
+                <h3>Social</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/ratnareddy/" target="_blank"
+                            style="font-size: 200%; color: white;"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com/mani.ratna.167" target="_blank"
+                            style="font-size: 200%; color: white;"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="mailto:maniratnabellamkonda@gmail.com" target="_blank"
+                            style="font-size: 200%; color: white;"><i class="bi bi-envelope-fill"></i></a></li>
+                    <li><a href="https://instagram.com/connect.mani?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D"
+                            target="_blank" style="font-size: 200%; color: white;"><i class="bi bi-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- This section contains links to the about page, contact page, careers page, and help center page -->
+            <div class="column about">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="HTML/about.html">About us</a></li>
+                    <li><a href="HTML/contact.html">Contact us</a></li>
+
+                </ul>
+            </div>
+            <!-- This section contains links to data policy, privacy policy, terms, and imprint pages -->
+            <div class="column legals">
+                <h3>Legals</h3>
+                <ul>
+                    <li><a href="#">Data Policy</a></li>
+                    <li><a href="#">Private Policy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Imprint</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- This section contains the copyright information -->
+        <div class="copyright">
+            <p> Made with 💛 by Edu Guru</p>
+        </div>
+    </footer>
+    <!-- End of footer section -->
 </body>
+
 </html>

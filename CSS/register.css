@@ -1,9 +1,9 @@
 .register-card{
     width: 100%;
     border-radius: 10px;
-    box-shadow: 1px 10px 10px 5px rgb(141, 144, 144);
+    border: #000000 solid 1px;
     text-align: center;
-    margin-top: 10%
+    margin-top: 2%
 }
 
 .card-body h2{

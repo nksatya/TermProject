@@ -1,0 +1,126 @@
+/* Authors: Mani Ratna Reddy Bellamkonda - C0887487, Satya - C0886405 Sai Chand Akkisani - C0882366, Karthik Saride - C0886429, Ravi Varman Ravichandran - C0885920
+  Project: Edu Guru
+  Date: 17-08-2023
+    Description: This is the CSS styling for Contact US  page. */
+
+
+/* CSS code for contact page */
+
+/* Styling for the container that holds the entire contact section */
+.contact-container {
+  padding: 20px 20px 130px 20px;
+}
+
+/* Styling for the heading of the contact section */
+.contact-heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: black;
+}
+
+/* Styling for the paragraphs in the contact section */
+.contact-p{
+  color: black;
+}
+
+/* Styling for the info section in the contact section */
+.info {
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* Styling for the heading and paragraphs in the info section */
+.contact-container .info h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #050d18;
+}
+
+.contact-container .info p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #173b6c;
+}
+
+/* Styling for the email paragraph in the info section */
+.contact-container .info .email p {
+  padding-top: 5px;
+}
+
+/* Styling for the flex container in the contact section */
+.d-flex {
+  display: flex;
+}
+
+/* Styling for the form control input element */
+.form-control:focus,
+.form-control:active,
+.form-control:focus-visible {
+  border-color: #124c66;
+}
+
+.form-control {
+  width: 100%;
+  border-radius: 4px;
+  min-height: 40px;
+  border: 1px solid #ccc;
+  line-height: 40px;
+  padding: 0 10px;
+  background: #fff;
+  margin: 15px 0;
+}
+
+/* Styling for the button element in the form */
+.add-form-btn {
+  padding: 11px;
+  font-size: 14px;
+  background-color: #124c66;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #124c66;
+}
+
+/* Set Form width to 40% and the left margin to 4rem for large screens */
+.col-lg-7 {
+  width: 40%;
+  margin-left: 4rem;
+}
+
+/* Increase the left margin to 7rem for screens with a minimum width of 1200px */
+@media only screen and (min-width: 1200px){
+  .col-lg-7 {
+    margin-left: 7rem;
+  }
+}
+
+/* Set a minimum width of 600px for iframes within a container with class "iframe-map" on screens with a minimum width of 1024px */
+@media only screen and (min-width: 1024px){
+  .iframe-map iframe {
+    min-width: 600px;
+  }
+}
+
+/* Set the flex-wrap property to wrap for elements with class "d-flex" on screens with a maximum width of 768px. Set the flex-basis property to 100% for elements with class "iframe-map". Set the minimum width of iframes within a container with class "iframe-map" to 100% and override any other width settings. Set the top margin to 15px, width to 100% and left margin to 0 for elements with class "col-lg-7" on screens with a maximum width of 768px. */
+@media only screen and (max-width: 768px){
+  .d-flex {
+    flex-wrap: wrap;
+  }
+  .iframe-map {
+    flex-basis: 100%;
+  }
+  .iframe-map iframe {
+    min-width: 100% !important;
+  }
+  .col-lg-7 {
+    margin-top: 15px;
+    width: 100%;
+    margin-left: 0;
+  }
+}

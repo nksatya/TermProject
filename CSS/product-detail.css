@@ -1,0 +1,281 @@
+/* Style sheet created by: Group(Sai Chand, Satya, Mani Rathna Reddy, Karthik, Ravi Varman) */
+/*This is common css file for all files.*/
+
+/*Styles for body tag*/
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "poppins";
+    background-color: #f8f8fa;
+}
+
+/*Styles for navigation bar*/
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Styles for brand name*/
+.logo {
+    width: 40%;
+    color: #ffffff;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 21px;
+    letter-spacing: 2px;
+}
+
+/*Styles for navigation container*/
+.nav-container {
+    width: 60%;
+    display: flex;
+    justify-content: end;
+}
+
+/*Styles for links navigation bar*/
+.nav-container > a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 20px;
+    line-height: 1.4em;
+}
+
+/*Styles for hover effect links navigation bar*/
+.nav-container > a:hover {
+    color: white;
+}
+
+/*Styles for navigation bar*/
+.active {
+    color: white !important;
+}
+
+/*Styles for general container around content*/
+.content-padding {
+    padding: 1% 4% 1%;
+}
+
+/*Styles for common background color*/
+.blue {
+    background-color: #0f57fb;
+}
+
+/*Styles for common white color*/
+.white {
+    color: white;
+}
+
+/*Styles for headings*/
+.heading {
+    margin-bottom: 0;
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+/*Styles for heading text*/
+.heading-text {
+    font-size: 20px;
+    line-height: 1.4em;
+}
+
+/*Styles for banner*/
+.banner {
+    background-color: #0f57fb;
+    margin: 0 9%;
+    display: flex;
+    padding: 0 5%;
+    justify-content: space-between;
+}
+/*Styles for banner text*/
+.banner > p {
+    font-size: 40px;
+    margin: 4% 0;
+    color: white;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+}
+
+/*Styles for banner button*/
+.banner > button {
+    height: 34px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: auto 0;
+    border-radius: 5px;
+    border: none;
+    width: 20%;
+    color: #0f57fb;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    color: #0f57fb;
+}
+
+/*Styles for hover effect in banner*/
+.banner > button:hover {
+    cursor: pointer;
+    transform: scale(1.025);
+}
+
+/*Styles for sub-heading text*/
+.sub-heading {
+    text-align: center;
+    margin-top: 0;
+}
+
+/*Styles for card wrapper*/
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Styles for card design*/
+.card {
+    width: 30%;
+    margin: 0 auto 10px;
+    background: white;
+    box-shadow: 2px 2px white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 4px 4px 10px 4px rgba(88, 88, 88, 0.33);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style sheet created by: Group(Sai Chand, Satya, Mani Rathna Reddy, Karthik, Ravi Varman) */
+/*Styles specific to about page*/
+
+/*styles for text elements*/
+.inner-box {
+    width: 48%;
+    margin-right: 2%;
+}
+
+/*styles for header in container*/
+.inner-box > h2 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 1.5px;
+    color: #000000;
+}
+/*styles for paragraph in container*/
+.inner-box > p {
+    line-height: 25px;
+    letter-spacing: 0.06em;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+/*styles for image in container*/
+img {
+    width: 100%;
+}
+/*styles for image container in container*/
+.img-container {
+    margin-top: 1em;
+}
+/*styles for image in container*/
+.star {
+    width: 20px;
+}
+
+/*styles for review text*/
+.review {
+    margin-top: 0;
+    margin-bottom: auto;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.9);
+    letter-spacing: 0.06em;
+}
+
+/*styles for reviewer text*/
+.reviewer {
+    font-weight: bold;
+}
+
+.product-font {
+    font-weight: bolder;
+}
+
+.product-extra {
+    /* list-style-type: none; */
+}
+
+/*styles for button mobile*/
+@media only screen and (max-width: 550px) {
+    .inner-box {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/*Styles for larger screen*/
+@media screen and (max-width: 880px) {
+    .card {
+        width: 45%;
+    }
+}
+
+/*Styles for tablet*/
+@media only screen and (max-width: 760px) {
+    .banner > p {
+        font-size: 30px;
+    }
+    .banner > button {
+        font-size: 12px;
+    }
+}
+
+/*Styles for mobile */
+@media only screen and (max-width: 650px) {
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+    .nav-container {
+        width: 100%;
+        margin: 30px 0;
+        justify-content: space-around;
+        margin-bottom: 0;
+    }
+    .pt0 {
+        padding-top: 0 !important;
+    }
+    .mt0 {
+        margin-top: 0 !important;
+    }
+    .text-align-center-m {
+        text-align: center;
+    }
+    .heading {
+        margin-top: 0;
+    }
+}
+
+/*Styles for mobile */
+@media only screen and (max-width: 550px) {
+    .banner > p {
+        font-size: 22px;
+    }
+    .banner > button {
+        font-size: 10px;
+        width: 24%;
+    }
+    .content-padding {
+        padding: 3%;
+    }
+    .banner {
+        margin: 0 3%;
+    }
+}
+
+/*Styles for small screen mobile */
+@media only screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}

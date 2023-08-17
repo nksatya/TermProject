@@ -1,0 +1,245 @@
+/* Authors: Mani Ratna Reddy Bellamkonda - C0887487, Satya - C0886405 Sai Chand Akkisani - C0882366, Karthik Saride - C0886429, Ravi Varman Ravichandran - C0885920
+  Project: Edu Guru
+  Date: 17-08-2023
+    Description: This is the common CSS which includes header/navbar and footer changes which applies to all webpages. */
+
+
+/* Applies box-sizing border-box to all elements */
+* {
+  box-sizing: border-box;
+
+}
+
+
+
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+  margin-top:16px;
+}
+
+/* Applies styles to the body element */
+body  {
+  width: 100%; /* Sets the width of the body element to 100% */
+  margin:0; /* Removes the default margin */
+  font-family: "Roboto", sans-serif; /* Sets the font family to Roboto */
+  background-color: #fdd101 !important; /* Sets the background color to #142431 */
+
+  font-size: calc(10px + 1vw); /* Sets the font size relative to the viewport width */
+}
+
+/* Applies styles to the navbar element */
+.navbar {
+
+  background-color: #000000; /* Sets the background color to #124c66 */
+  height: 80px; /* Sets the height of the navbar to 80px */
+  display: flex; /* Makes the navbar a flex container */
+  width: 100%; /* Sets the width of the navbar to 100% */
+  justify-content: space-between; /* Aligns the content to the left and right edges of the navbar */
+  padding-right: 25px; /* Adds right padding to the navbar */
+}
+
+/* Applies styles to the logo element */
+.logo{
+  margin-top:1%; /* Sets top margin to 1% */
+  width: 100px; /* Sets the width of the logo to 100px */
+}
+
+/* Applies styles to the navbar list items on hover */
+.navbar-list-items:hover{
+  font-weight: 600; /* Sets the font weight to 600 */
+  font-size: 24px; /* Sets the font size to 24px */
+  color: #e0d5d5; /* Changes the color to #e0d5d5 */
+}
+
+/* Applies styles to the navbar list */
+.navbar-list {
+  display: flex; /* Makes the navbar list a flex container */
+  gap: 15px; /* Adds a gap of 30px between list items */
+  list-style-type: none; /* Removes the default list style */
+  color: white; /* Sets the text color to white */
+  align-items: center; /* Vertically aligns the list items */
+}
+
+/* Applies styles to the logo2 element on smaller screens */
+.logo2{
+  display: none; /* Hides the logo2 element */
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width:768px){
+  /* Hides the logo element */
+  .logo{
+    display: none;
+  }
+  /* Displays the logo2 element */
+  .logo2{
+    display: block; /* Displays the logo2 element */
+    text-align: center; /* Centers the element */
+    width: 100px; /* Sets the width to 100px */
+  }
+}
+
+/* Applies styles to the navbar list items */
+.navbar-list-items {
+  color: #fefefe; /* Sets the text color to #abb8c3 */
+  font-weight: 500; /* Sets the font weight to 500 */
+  cursor: pointer; /* Sets the cursor to a pointer */
+  font-size: 23px; /* Sets the font size to 23px */
+  line-height: 1.6; /* Sets the line height to 1.6 */
+  text-decoration: none; /* Removes the default text decoration */
+  margin-right: 20px; /* Adds right margin to the navbar list items */
+}
+
+
+
+/* Defines styling for the desktop version of the footer */
+.footer {
+  background-color: #000000;
+  color: #abb8c3;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px 0;
+  width: 100%;
+  }
+  
+  /* Defines the layout of the footer */
+  .footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  }
+  
+  /* Defines the layout of each column */
+  .column {
+  flex-basis: 30%;
+  max-width: 30%;
+  }
+  
+  /* Defines styling for each column heading */
+  .column h3 {
+  margin-bottom: 15px;
+  color: #fefefe;
+  }
+
+  
+  /* Defines styling for each column list */
+  .column ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  }
+  
+  /* Defines styling for each list item in a column */
+  .column ul li {
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+  }
+  
+  /* Defines styling for each link in a list item */
+  .column ul li a {
+  color: #fefefe;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  }
+  
+  /* Defines styling for each link on hover */
+  .column ul li a:hover {
+  color: #fff;
+  transform: translateY(-5px);
+  }
+  
+  /* Defines the layout of the social media icons */
+  .social {
+  text-align: center;
+  }
+  
+  /* Defines the layout of each social media icon */
+  .social ul {
+  display: flex;
+  justify-content: center;
+  margin-left: 40px;
+  }
+  
+  /* Defines the layout of each social media icon */
+  .social ul li {
+  margin-right: 20px;
+  }
+  
+  /* Defines the layout and alignment of the "About", "Legals", and "Copyright" sections */
+  .about, .legals, .copyright {
+  text-align: center;
+  }
+  
+  /* Defines styling for the tablet version of the footer */
+  @media only screen and (max-width: 768px) {
+  .column {
+  flex-basis: 50%;
+  max-width: 50%;
+  }
+  }
+  
+  /* Defines styling for the mobile version of the footer */
+  @media only screen and (max-width: 480px) {
+  .column {
+  flex-basis: 100%;
+  max-width: 100%;
+  text-align: center;
+  }
+  }
+  
+  /* Defines styling for the navbar on tablet devices */
+  @media only screen and (max-width: 768px){
+  .navbar {
+  flex-direction: column;
+  height: auto;
+  padding: 15px;
+  }
+  
+  .navbar-list {
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 15px;
+  text-align: center;
+  }
+  
+  .navbar-list-items {
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+  }
+  
+  .logo {
+  margin-left: 6%;
+  text-align: center;
+  width: 100px;
+  }
+  }
+  
+  /* Defines styling for social media icons in columns */
+  .column social img{
+  height: 50px;
+  width: 50px;
+  }
+  
+  /* Defines styling for footer logo */
+  footer img{
+  height: 50px;
+  width: 50px;
+  }

@@ -1,0 +1,100 @@
+/* Authors: Mani Ratna Reddy Bellamkonda - C0887487, Satya - C0886405 Sai Chand Akkisani - C0882366, Karthik Saride - C0886429, Ravi Varman Ravichandran - C0885920
+  Project: Edu Guru
+  Date: 17-08-2023
+    Description: This is the CSS Stylings for About us page.*/
+
+/* Set text color of body to white */
+body {
+    color: white;
+}
+
+/* Set width, margin, padding, background color and text alignment for page container */
+.page-container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* Set default styles for the team section */
+.team-section {
+    background: #fdd101;
+    color: black;
+    padding: 50px;
+}
+
+/* Set default styles for the team section heading */
+.team-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+/* Set default styles for the table and its cells */
+.team-intro {
+    display: table;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+.team-intro td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Set default styles for the figure captions */
+.team-intro figcaption {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Set default styles for the team member images */
+.team-intro img {
+    border-radius: 50%;
+    border: 5px solid #124c66;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* Adjust the number of columns displayed based on screen size */
+@media only screen and (max-width: 1024px) {
+    .team-intro {
+        display: table;
+        margin: 0 auto;
+        padding-top: 25px;
+    }
+
+    .team-intro img {
+        width: 175px;
+        height: 175px;
+    }
+
+    .team-intro td {
+        padding: 10px;
+        text-align: center;
+        display: inline-block;
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .team-intro td:nth-child(odd) {
+        clear: left;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .team-intro td {
+        width: 100%;
+        float: none;
+        box-sizing: border-box;
+    }
+
+    .team-intro img {
+        width: 175px;
+        height: 175px;
+    }
+}
