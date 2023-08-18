@@ -28,13 +28,16 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="let count = document.getElementById('count');
+let cart = JSON.parse(localStorage.getItem('cart'));
+count.innerHTML = cart.count;">
   <!--Header section with navigation bar-->
   <header>
     <nav class="navbar">
       <a href="../index.html"><img src="https://i.ibb.co/M97cfHG/logo1.png" class="logo" alt="Company's logo"></a>
       <ul class="navbar-list">
-        <li><a href="../index.html"><img src="https://i.ibb.co/M97cfHG/logo1.png" class="logo2" alt="Company's logo"></a>
+        <li><a href="../index.html"><img src="https://i.ibb.co/M97cfHG/logo1.png" class="logo2"
+              alt="Company's logo"></a>
         </li>
         <li><a class="navbar-list-items" href="#down">Categories</a></li>
 
@@ -43,7 +46,12 @@
         <li><a class="navbar-list-items" href="../HTML/contact.html">Contact us</a></li>
         <li><a class="navbar-list-items" href="../HTML/about.html">About us</a></li>
         <li><a class="navbar-list-items" href="../index.html">Logout</a></li>
-
+        <li>
+          <div class="cart">
+            <span id="count" class="count"></span>
+            <i class="bi bi-cart"></i>
+          </div>
+        </li>
       </ul>
     </nav>
   </header>

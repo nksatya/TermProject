@@ -24,7 +24,7 @@
    <script src="../JS/product.js"></script>
 </head>
 
-<body>
+<body onload="init(event)">
    <!--Header section with navigation bar-->
    <header>
       <nav class="navbar">
@@ -40,6 +40,12 @@
             <li><a class="navbar-list-items" href="./contact.html">Contact us</a></li>
             <li><a class="navbar-list-items" href="./about.html">About us</a></li>
             <li><a class="navbar-list-items" href="../index.html">Logout</a></li>
+            <li>
+               <div class="cart">
+                  <span id="count" class="count"></span>
+                  <i class="bi bi-cart"></i>
+               </div>
+            </li>
          </ul>
       </nav>
    </header>
@@ -60,8 +66,8 @@
             <h3 style="text-align: left;">$45 CAD </h3>
             <!-- These are buttons for adding to cart and buying now -->
             <div class="product-buttons">
-               <button class="add-to-cart">Add to Cart</button>
-               <button class="buy-now">Buy Now</button>
+               <button id="1" class="add-to-cart" onclick="increaseCount(event)">Add to Cart</button>
+               <button class="buy-now" onclick="buyNow()">Buy Now</button>
             </div>
          </div>
          <!-- This is the second product card -->
@@ -74,8 +80,8 @@
             <h3 style="text-align: left; ">CAD 35</h3>
             <!-- These are buttons for adding to cart and buying now -->
             <div class="product-buttons">
-               <button class="add-to-cart">Add to Cart</button>
-               <button class="buy-now">Buy Now</button>
+               <button id="2" class="add-to-cart" onclick="increaseCount(event)">Add to Cart</button>
+               <button class="buy-now" onclick="buyNow()">Buy Now</button>
             </div>
          </div>
          <!-- This is the third product card -->
@@ -88,8 +94,8 @@
             <h3 style="text-align: left;">CAD 20</h3>
             <!-- These are buttons for adding to cart and buying now -->
             <div class="product-buttons">
-               <button class="add-to-cart">Add to Cart</button>
-               <button class="buy-now">Buy Now</button>
+               <button id="3" class="add-to-cart" onclick="increaseCount(event)">Add to Cart</button>
+               <button class="buy-now" onclick="buyNow()">Buy Now</button>
             </div>
          </div>
          <!-- This is the fourth product card -->
@@ -103,8 +109,8 @@
 
             <!-- These are buttons for adding to cart and buying now -->
             <div class="product-buttons">
-               <button class="add-to-cart">Add to Cart</button>
-               <button class="buy-now">Buy Now</button>
+               <button id="4" class="add-to-cart" onclick="increaseCount(event)">Add to Cart</button>
+               <button class="buy-now" onclick="buyNow()">Buy Now</button>
             </div>
          </div>
       </div>
@@ -119,8 +125,8 @@
             <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Rob</h6>
             <h3 style="text-align: left;">CAD 42</h3>
             <div class="product-buttons">
-               <button class="add-to-cart">Add to Cart</button>
-               <button class="buy-now">Buy Now</button>
+               <button id="5" class="add-to-cart" onclick="increaseCount(event)">Add to Cart</button>
+               <button class="buy-now" onclick="buyNow()">Buy Now</button>
             </div>
          </div>
          <div class="product-card">
@@ -131,8 +137,8 @@
             <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Issac</h6>
             <h3 style="text-align: left;">CAD 15</h3>
             <div class="product-buttons">
-               <button class="add-to-cart">Add to Cart</button>
-               <button class="buy-now">Buy Now</button>
+               <button id="6" class="add-to-cart" onclick="increaseCount(event)">Add to Cart</button>
+               <button class="buy-now" onclick="buyNow()">Buy Now</button>
             </div>
          </div>
          <div class="product-card">
@@ -142,8 +148,8 @@
             <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Benjamin</h6>
             <h3 style="text-align: left;">CAD 37</h3>
             <div class="product-buttons">
-               <button class="add-to-cart">Add to Cart</button>
-               <button class="buy-now">Buy Now</button>
+               <button id="7" class="add-to-cart" onclick="increaseCount(event)">Add to Cart</button>
+               <button class="buy-now" onclick="buyNow()">Buy Now</button>
             </div>
          </div>
          <div class="product-card">
@@ -153,8 +159,8 @@
             <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Envy</h6>
             <h3 style="text-align: left;">CAD 41</h3>
             <div class="product-buttons">
-               <button class="add-to-cart">Add to Cart</button>
-               <button class="buy-now">Buy Now</button>
+               <button id="8" class="add-to-cart" onclick="increaseCount(event)">Add to Cart</button>
+               <button class="buy-now" onclick="buyNow()">Buy Now</button>
             </div>
          </div>
       </div>
@@ -168,8 +174,8 @@
             <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Angela</h6>
             <h3 style="text-align: left;">CAD 55</h3>
             <div class="product-buttons">
-               <button class="add-to-cart">Add to Cart</button>
-               <button class="buy-now">Buy Now</button>
+               <button id="9" class="add-to-cart" onclick="increaseCount(event)">Add to Cart</button>
+               <button class="buy-now" onclick="buyNow()">Buy Now</button>
             </div>
          </div>
          <div class="product-card">
@@ -179,8 +185,8 @@
             <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Maarek</h6>
             <h3 style="text-align: left;">CAD 32</h3>
             <div class="product-buttons">
-               <button class="add-to-cart">Add to Cart</button>
-               <button class="buy-now">Buy Now</button>
+               <button id="10" class="add-to-cart" onclick="increaseCount(event)">Add to Cart</button>
+               <button class="buy-now" onclick="buyNow()">Buy Now</button>
             </div>
          </div>
          <div class="product-card">
@@ -191,8 +197,8 @@
             <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Sabih</h6>
             <h3 style="text-align: left;">CAD 34</h3>
             <div class="product-buttons">
-               <button class="add-to-cart">Add to Cart</button>
-               <button class="buy-now">Buy Now</button>
+               <button id="11" class="add-to-cart" onclick="increaseCount(event)">Add to Cart</button>
+               <button class="buy-now" onclick="buyNow()">Buy Now</button>
             </div>
          </div>
          <div class="product-card">
@@ -203,8 +209,8 @@
             <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Ahmad</h6>
             <h3 style="text-align: left;">CAD 21</h3>
             <div class="product-buttons">
-               <button class="add-to-cart">Add to Cart</button>
-               <button class="buy-now">Buy Now</button>
+               <button id="12" class="add-to-cart" onclick="increaseCount(event)">Add to Cart</button>
+               <button class="buy-now" onclick="buyNow()">Buy Now</button>
             </div>
          </div>
       </div>
@@ -218,8 +224,8 @@
             <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Josh</h6>
             <h3 style="text-align: left;">CAD 25</h3>
             <div class="product-buttons">
-               <button class="add-to-cart">Add to Cart</button>
-               <button class="buy-now">Buy Now</button>
+               <button id="13" class="add-to-cart" onclick="increaseCount(event)">Add to Cart</button>
+               <button class="buy-now" onclick="buyNow()">Buy Now</button>
             </div>
          </div>
          <div class="product-card">
@@ -229,8 +235,8 @@
             <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Jeff</h6>
             <h3 style="text-align: left;">CAD 29</h3>
             <div class="product-buttons">
-               <button class="add-to-cart">Add to Cart</button>
-               <button class="buy-now">Buy Now</button>
+               <button id="14" class="add-to-cart" onclick="increaseCount(event)">Add to Cart</button>
+               <button class="buy-now" onclick="buyNow()">Buy Now</button>
             </div>
          </div>
          <div class="product-card">
@@ -241,8 +247,8 @@
             <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Samara</h6>
             <h3 style="text-align: left;">CAD 19</h3>
             <div class="product-buttons">
-               <button class="add-to-cart">Add to Cart</button>
-               <button class="buy-now">Buy Now</button>
+               <button id="15" class="add-to-cart" onclick="increaseCount(event)">Add to Cart</button>
+               <button class="buy-now" onclick="buyNow()">Buy Now</button>
             </div>
          </div>
          <div class="product-card">
@@ -253,8 +259,8 @@
             <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">John</h6>
             <h3 style="text-align: left;">CAD 32</h3>
             <div class="product-buttons">
-               <button class="add-to-cart">Add to Cart</button>
-               <button class="buy-now">Buy Now</button>
+               <button id="16" class="add-to-cart" onclick="increaseCount(event)">Add to Cart</button>
+               <button class="buy-now" onclick="buyNow()">Buy Now</button>
             </div>
          </div>
       </div>
@@ -269,8 +275,8 @@
             <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Frik</h6>
             <h3 style="text-align: left;">CAD 30</h3>
             <div class="product-buttons">
-               <button class="add-to-cart">Add to Cart</button>
-               <button class="buy-now">Buy Now</button>
+               <button id="17" class="add-to-cart" onclick="increaseCount(event)">Add to Cart</button>
+               <button class="buy-now" onclick="buyNow()">Buy Now</button>
             </div>
          </div>
          <div class="product-card">
@@ -280,8 +286,8 @@
             <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Tom</h6>
             <h3 style="text-align: left;">CAD 38</h3>
             <div class="product-buttons">
-               <button class="add-to-cart">Add to Cart</button>
-               <button class="buy-now">Buy Now</button>
+               <button id="18" class="add-to-cart" onclick="increaseCount(event)">Add to Cart</button>
+               <button class="buy-now" onclick="buyNow()">Buy Now</button>
             </div>
          </div>
          <div class="product-card">
@@ -292,8 +298,8 @@
             <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Beak</h6>
             <h3 style="text-align: left;">CAD 45</h3>
             <div class="product-buttons">
-               <button class="add-to-cart">Add to Cart</button>
-               <button class="buy-now">Buy Now</button>
+               <button id="19" class="add-to-cart" onclick="increaseCount(event)">Add to Cart</button>
+               <button class="buy-now" onclick="buyNow()">Buy Now</button>
             </div>
          </div>
          <div class="product-card">
@@ -304,8 +310,8 @@
             <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Richard</h6>
             <h3 style="text-align: left;">CAD 24</h3>
             <div class="product-buttons">
-               <button class="add-to-cart">Add to Cart</button>
-               <button class="buy-now">Buy Now</button>
+               <button id="20" class="add-to-cart" onclick="increaseCount(event)">Add to Cart</button>
+               <button class="buy-now" onclick="buyNow()">Buy Now</button>
             </div>
          </div>
       </div>
@@ -320,8 +326,8 @@
             <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">TrueFire</h6>
             <h3 style="text-align: left;">CAD 65</h3>
             <div class="product-buttons">
-               <button class="add-to-cart">Add to Cart</button>
-               <button class="buy-now">Buy Now</button>
+               <button id="21" class="add-to-cart" onclick="increaseCount(event)">Add to Cart</button>
+               <button class="buy-now" onclick="buyNow()">Buy Now</button>
             </div>
          </div>
          <div class="product-card">
@@ -332,8 +338,8 @@
             <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Kamal</h6>
             <h3 style="text-align: left;">CAD 47</h3>
             <div class="product-buttons">
-               <button class="add-to-cart">Add to Cart</button>
-               <button class="buy-now">Buy Now</button>
+               <button id="22" class="add-to-cart" onclick="increaseCount(event)">Add to Cart</button>
+               <button class="buy-now" onclick="buyNow()">Buy Now</button>
             </div>
          </div>
          <div class="product-card">
@@ -344,8 +350,8 @@
             <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Robin</h6>
             <h3 style="text-align: left;">CAD 38</h3>
             <div class="product-buttons">
-               <button class="add-to-cart">Add to Cart</button>
-               <button class="buy-now">Buy Now</button>
+               <button id="23" class="add-to-cart" onclick="increaseCount(event)">Add to Cart</button>
+               <button class="buy-now" onclick="buyNow()">Buy Now</button>
             </div>
          </div>
          <div class="product-card">
@@ -356,8 +362,8 @@
             <h6 style="color:#959595;text-align: left; margin: auto; margin-left: 0px;">Bowes</h6>
             <h3 style="text-align: left;">CAD 31</h3>
             <div class="product-buttons">
-               <button class="add-to-cart">Add to Cart</button>
-               <button class="buy-now">Buy Now</button>
+               <button id="24" class="add-to-cart" onclick="increaseCount(event)">Add to Cart</button>
+               <button class="buy-now" onclick="buyNow()">Buy Now</button>
             </div>
          </div>
       </div>

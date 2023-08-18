@@ -7,4 +7,8 @@ function init() {
     document.getElementById('instructor').innerHTML = course.instructor;
     document.getElementById('price').innerHTML = course.price;
     document.getElementById('time').innerHTML = course.time;
+
+    let count = document.getElementById('count');
+    let cart = JSON.parse(localStorage.getItem('cart'));
+    count.innerHTML = cart.count;
 }

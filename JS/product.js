@@ -1,3 +1,8 @@
+function init(event) {
+    let count = document.getElementById('count');
+    let cart = JSON.parse(localStorage.getItem('cart'));
+    count.innerHTML = cart.count;
+}
 function storeData(event) {
     let title = event.srcElement.parentElement.childNodes[3].innerHTML;
     let price = event.srcElement.parentElement.childNodes[7].innerHTML;
@@ -35,4 +40,27 @@ function storeData(event) {
     let course = { title, price, instructor, imgSrc, courseDesc, time };
     localStorage.setItem('selectedCourse', JSON.stringify(course));
     window.open('https://nksatya.github.io/TermProject/HTML/product-detail.html', '_self');
+}
+
+function increaseCount(event) {
+    let count = parseInt(document.getElementById('count').innerHTML);
+    let localCart = JSON.parse(localStorage.getItem('cart'));
+    let clickedId = event.currentTarget.id;
+    if (localCart.id.includes(clickedId)) {
+        localCart.id.splice(localCart.id.indexOf(clickedId), 1);
+        localCart.count = localCart.count - 1;
+        document.getElementById('count').innerHTML = localCart.count;
+        localStorage.setItem('cart', JSON.stringify(localCart));
+    }
+    else {
+        count = count + 1;
+        localCart.id.push(event.currentTarget.id);
+        let cart = { "count": JSON.stringify(count), "id": localCart.id };
+        localStorage.setItem('cart', JSON.stringify(cart));
+        document.getElementById('count').innerHTML = count;
+    }
+}
+
+function buyNow() {
+    alert('Transfering you to external payment website.');
 }

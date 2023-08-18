@@ -201,10 +201,6 @@ img {
     font-weight: bolder;
 }
 
-.product-extra {
-    /* list-style-type: none; */
-}
-
 /*styles for button mobile*/
 @media only screen and (max-width: 550px) {
     .inner-box {

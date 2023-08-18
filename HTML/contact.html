@@ -23,7 +23,9 @@
    </script>
 </head>
 
-<body>
+<body onload="let count = document.getElementById('count');
+let cart = JSON.parse(localStorage.getItem('cart'));
+count.innerHTML = cart.count;">
    <!--Header section with navigation bar-->
    <header>
       <nav class="navbar">
@@ -39,6 +41,12 @@
             <li><a class="navbar-list-items" href="./contact.html">Contact us</a></li>
             <li><a class="navbar-list-items" href="./about.html">About us</a></li>
             <li><a class="navbar-list-items" href="../index.html">Logout</a></li>
+            <li>
+               <div class="cart">
+                  <span id="count" class="count"></span>
+                  <i class="bi bi-cart"></i>
+               </div>
+            </li>
          </ul>
       </nav>
    </header>
