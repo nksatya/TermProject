@@ -185,7 +185,7 @@ img {
 
 .product-buttons {
     display: flex; /* sets the display property to flex to align child elements */
-    flex-direction: column; /* arranges child elements vertically */
+    flex-direction: row; /* arranges child elements vertically */
 }
 
 /* This selector targets the element with class 'add-to-cart' inside the product card */
