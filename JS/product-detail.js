@@ -12,3 +12,26 @@ function init() {
     let cart = JSON.parse(localStorage.getItem('cart'));
     count.innerHTML = cart.count;
 }
+
+function increaseCount(event) {
+    let count = parseInt(document.getElementById('count').innerHTML);
+    let localCart = JSON.parse(localStorage.getItem('cart'));
+    let clickedId = event.currentTarget.id;
+    if (localCart.id.includes(clickedId)) {
+        localCart.id.splice(localCart.id.indexOf(clickedId), 1);
+        localCart.count = localCart.count - 1;
+        document.getElementById('count').innerHTML = localCart.count;
+        localStorage.setItem('cart', JSON.stringify(localCart));
+    }
+    else {
+        count = count + 1;
+        localCart.id.push(event.currentTarget.id);
+        let cart = { "count": JSON.stringify(count), "id": localCart.id };
+        localStorage.setItem('cart', JSON.stringify(cart));
+        document.getElementById('count').innerHTML = count;
+    }
+}
+
+function buyNow() {
+    alert('Transfering you to external payment website.');
+}

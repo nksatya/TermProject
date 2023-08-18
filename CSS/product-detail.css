@@ -183,6 +183,23 @@ img {
     width: 20px;
 }
 
+.product-buttons {
+    display: flex; /* sets the display property to flex to align child elements */
+    flex-direction: column; /* arranges child elements vertically */
+}
+
+/* This selector targets the element with class 'add-to-cart' inside the product card */
+.add-to-cart {
+    margin: 10px 0; /* adds margin above and below the element */
+    width: 100%; /* sets the width of the element to 100% of its container */
+}
+
+/* This selector targets the element with class 'buy-now' inside the product card */
+.buy-now {
+    margin: 10px 0 0; /* adds margin above the element */
+    width: 100%; /* sets the width of the element to 100% of its container */
+}
+
 /*styles for review text*/
 .review {
     margin-top: 0;

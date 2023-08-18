@@ -3,6 +3,8 @@ function init(event) {
     let cart = JSON.parse(localStorage.getItem('cart'));
     count.innerHTML = cart.count;
 }
+
+
 function storeData(event) {
     let title = event.srcElement.parentElement.childNodes[3].innerHTML;
     let price = event.srcElement.parentElement.childNodes[7].innerHTML;
