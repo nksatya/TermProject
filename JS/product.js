@@ -34,5 +34,5 @@ function storeData(event) {
 
     let course = { title, price, instructor, imgSrc, courseDesc, time };
     localStorage.setItem('selectedCourse', JSON.stringify(course));
-    window.open('D:/Study documents/Term 2/FE II/Assignment Git/Term project Karthik/TermProject/HTML/product-detail.html', '_self');
+    window.open('https://nksatya.github.io/TermProject/HTML/product-detail.html', '_self');
 }
